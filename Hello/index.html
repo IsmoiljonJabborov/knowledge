@@ -38,12 +38,15 @@
 		
 	}
 	.home .text-container{
-		text-align: center;
+		text-align: left;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: left;
 		height: 50vh;
-		color: white;
+		color: yellow;
+	}
+	#forms{
+		background: linen;
 	}
 </style>
 	<title>Tohir akaga SALOM!</title>
@@ -63,14 +66,15 @@
 	<div class="text-container">
 		<div>
 	<h1>Assalomu alaykum.</h1>
-	<p>Yaxshimisiz Tohir aka...??? Salomatmisiz, charchamasdan yuribsizmi...???</p>
+	<p>Olam olam yangiliklardan boxabar bo'lish uchun xush kelibsiz.</p>
 	<h2>Assalomu alaykum.</h2>
-	<p>Bobur aka ham yaxshimilar...??? Alloh ishlarizga rivoj bersin. Charchamang.</p>
+	<p>Hayrli tong tilagan holatda biz o'z ishimzini ya'ni o'rganishimizni boshladik.</p>
 	<p>Dasturlash olamiga xush kelibsiz. :)</p>
 		</div>
 	</div>
 </div>
-<div>
+<div id="forms">
+<div class="form">
 	<form action="https://www.google.com" method="get" target="_blank">
 		<p><i>Username: </m>
 			<input type="text" name="username" maxlength="5" title="you can only type 5 letters." />
@@ -79,7 +83,7 @@
 			<input type="password" name="password" title="any number and one uppercase and lowercase letter." maxlength="7"></p>
 	</form>
 </div><hr/>
-<div> <form action="https://www.google.com" method="get">
+<div class="form"> <form action="https://www.google.com" method="get">
 	<p>Quyidagilardan yoqqanini tanglang: <br/>
 	<input type="radio" name="clothes" value="Jinsi" checked="checked" title="sifatli"> Jinsi
 	<input type="radio" name="clothes" value="Shapka" title="qimmat">Shapka
@@ -87,13 +91,13 @@
 	</p>
 </form>
 </div><hr/>
-<div><form action="https://www.google.com" method="get">
+<div class="form"><form action="https://www.google.com" method="get">
 	<p>Ushbulardan sizga eng yoqannini tanlashinggiz mumkin: <br/>
 		<input type="checkbox" name="yoqtirilgan" value="Iphone" title="Qimmat" checked="checked">Iphone
 		<input type="checkbox" name="yoqtirilgan" value="Samsung" title="Qulay">Samsung
 		<input type="checkbox" name="yoqtirilgan" value="Redmi" title="Sifatsiz ammo arzon">Redmi</p>
 </form></div><hr/>
-<div><form action="https://www.google.com" method="get">
+<div class="form"><form action="https://www.google.com" method="get">
 	<p>Xo'sh bugun soat nechchida osh pishgan bo'ladi?
 		<select  name="soatlar">
 			<option value="13:30" title="deyarli yo'q">11:30</option>
@@ -101,6 +105,6 @@
 			<option value="17:20" title="shomdan oldin" selected="selected">17:20</option>
 		</select></p>
 </form></div>
-
+</div>
 </body>
 </html>
