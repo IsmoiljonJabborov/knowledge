@@ -49,7 +49,7 @@
 		background: linen;
 	}
 </style>
-	<title>Tohir akaga SALOM!</title>
+	<title>World of programming</title>
 </head>
 <body> 
 <div class="home">
@@ -75,16 +75,16 @@
 </div>
 <div id="forms">
 <div class="form">
-	<form action="https://www.google.com" method="get" target="_blank">
+	<form action="https://www.google.com" method="post" target="_blank">
 		<p><i>Username: </m>
 			<input type="text" name="username" maxlength="5" title="you can only type 5 letters." />
 		</p>
 		<p><em>Password:  </em>
 			<input type="password" name="password" title="any number and one uppercase and lowercase letter." maxlength="7"></p>
-	</form>
+	<input type="submit" name="sign in" value="Sign in" title="Brings you to google."></form>
 </div><hr/>
 <div class="form"> <form action="https://www.google.com" method="get">
-	<p>Quyidagilardan yoqqanini tanglang: <br/>
+	<p><b>Quyidagilardan yoqqanini tanglang:</b> <br/>
 	<input type="radio" name="clothes" value="Jinsi" checked="checked" title="sifatli"> Jinsi
 	<input type="radio" name="clothes" value="Shapka" title="qimmat">Shapka
 	<input type="radio" name="clothes" value="Futbolka" title="arzon">Futbolka
@@ -92,18 +92,37 @@
 </form>
 </div><hr/>
 <div class="form"><form action="https://www.google.com" method="get">
-	<p>Ushbulardan sizga eng yoqannini tanlashinggiz mumkin: <br/>
+	<p><strong>Ushbulardan sizga eng yoqannini tanlashinggiz mumkin:</strong> <br/>
 		<input type="checkbox" name="yoqtirilgan" value="Iphone" title="Qimmat" checked="checked">Iphone
 		<input type="checkbox" name="yoqtirilgan" value="Samsung" title="Qulay">Samsung
 		<input type="checkbox" name="yoqtirilgan" value="Redmi" title="Sifatsiz ammo arzon">Redmi</p>
 </form></div><hr/>
 <div class="form"><form action="https://www.google.com" method="get">
-	<p>Xo'sh bugun soat nechchida osh pishgan bo'ladi?
+	<p><strong>Xo'sh bugun soat nechchida osh pishgan bo'ladi?</strong>
 		<select  name="soatlar">
 			<option value="13:30" title="deyarli yo'q">11:30</option>
 			<option value="15:00" title="ehtimol">15:00</option>
 			<option value="17:20" title="shomdan oldin" selected="selected">17:20</option>
 		</select></p>
+</form></div> <hr/>
+<div class="form"><form action="https://www.google.com" method="get">
+	<p><b>Bir qancha to'plamlardan istalganini tanlang: </b><br/>
+	<select name="to'plam" size="3" multiple="multiple">
+		<option value="Tashkent city" title="The most expensive">Tashkent city</option>
+		<option value="Murad buildings" title="The middle class">Murad buildings</option>
+		<option value="Olmazor city" title="The normal one">Olmazor city</option>
+		<option value="Minor buildings" title="Good choice">Minor buildings</option>
+	</select><br><br>
+<input type="submit" name="to'plam" value="Tasdiqlash"></p>
+</form></div> <hr/>
+<div class="form"><form action="https://www.google.com" method="post">
+	<p><b>Faylni yuklang: </b><br/>
+		<input type="file" name="song" title="You should submit only the song."><br/><br/>
+		<input type="submit" value="Yuklash"/></p>
+</form></div><hr/>
+<div class="form"><form action="https://t.me/folwersshop602">
+	<p><i>Bizga qo'shilish uchun, "Kanalga qo'shilish" tugmasini bosing.</i> <br>
+		<input type="submit" value="Kanalga qo'shilish"></p>
 </form></div>
 </div>
 </body>
