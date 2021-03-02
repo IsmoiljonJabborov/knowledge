@@ -48,6 +48,11 @@
 	#forms{
 		background: linen;
 	}
+	.username{
+		text-align: center;
+		color: blue;
+		font-family: Times New Roman, serif;
+	}
 </style>
 	<title>World of programming</title>
 </head>
@@ -74,16 +79,17 @@
 	</div>
 </div>
 <div id="forms">
-<div class="form">
+<div class="username">
 	<form action="https://www.google.com" method="post" target="_blank">
-		<p><i>Username: </m>
-			<input type="text" name="username" maxlength="5" title="you can only type 5 letters." />
+		<p><i>Foydalanuvchi ismi: </m><br>
+			<input type="text" name="username" maxlength="10" title="you can only type 10 letters." required />
 		</p>
-		<p><em>Password:  </em>
-			<input type="password" name="password" title="any number and one uppercase and lowercase letter." maxlength="7"></p>
-	<input type="submit" name="sign in" value="Sign in" title="Brings you to google."></form>
+		<p><em>Maxsus kod:  </em><br>
+			<input type="password" name="password" title="any number and one uppercase and lowercase letter." maxlength="7" required=""></p>
+	<input type="submit" name="sign in" value="Tizimga kirish" title="Brings you to google."></form>
+	<input type="reset" name="" value="Qayta kiritish">	
 </div><hr/>
-<div class="form"> <form action="https://www.google.com" method="get">
+<div class="like" style="text-align: center;"> <form action="https://www.google.com" method="get">
 	<p><b>Quyidagilardan yoqqanini tanglang:</b> <br/>
 	<input type="radio" name="clothes" value="Jinsi" checked="checked" title="sifatli"> Jinsi
 	<input type="radio" name="clothes" value="Shapka" title="qimmat">Shapka
@@ -91,21 +97,22 @@
 	</p>
 </form>
 </div><hr/>
-<div class="form"><form action="https://www.google.com" method="get">
+<div class="like" style="text-align: center;"><form action="https://www.google.com" method="get">
 	<p><strong>Ushbulardan sizga eng yoqannini tanlashinggiz mumkin:</strong> <br/>
 		<input type="checkbox" name="yoqtirilgan" value="Iphone" title="Qimmat" checked="checked">Iphone
 		<input type="checkbox" name="yoqtirilgan" value="Samsung" title="Qulay">Samsung
 		<input type="checkbox" name="yoqtirilgan" value="Redmi" title="Sifatsiz ammo arzon">Redmi</p>
 </form></div><hr/>
+<!--
 <div class="form"><form action="https://www.google.com" method="get">
-	<p><strong>Xo'sh bugun soat nechchida osh pishgan bo'ladi?</strong>
+	<p><strong><mark>Xo'sh bugun soat nechchida osh pishgan bo'ladi?</mark></strong>
 		<select  name="soatlar">
 			<option value="13:30" title="deyarli yo'q">11:30</option>
 			<option value="15:00" title="ehtimol">15:00</option>
 			<option value="17:20" title="shomdan oldin" selected="selected">17:20</option>
 		</select></p>
-</form></div> <hr/>
-<div class="form"><form action="https://www.google.com" method="get">
+</form></div> <hr/>-->
+<div class="choose" style="text-align: center;"><form action="https://www.google.com" method="get">
 	<p><b>Bir qancha to'plamlardan istalganini tanlang: </b><br/>
 	<select name="to'plam" size="3" multiple="multiple">
 		<option value="Tashkent city" title="The most expensive">Tashkent city</option>
@@ -124,6 +131,19 @@
 	<p><i>Bizga qo'shilish uchun, "Kanalga qo'shilish" tugmasini bosing.</i> <br>
 		<input type="submit" value="Kanalga qo'shilish"></p>
 </form></div>
+<div class="form"><form action="https://www.google.com" method="get">
+<button> Add
+<input type="hidden" name="lyrics" value="bookmark"></button>
+</form></div><hr/>
+<div class="form"><form action="https://www.google.com">
+	<label>Age: <input type="number" name="age" title="Enter the age" required="" /></label><br>
+	Gender:
+	<input id="male" type="radio" name="gender" value="m" required="">
+	<label for="male">Male</label>
+	<input id="female" type="radio" name="gender" value="f">
+	<label for="female">Female</label><br>
+	<input type="submit" value="Submit">
+</form></div><hr>
 </div>
 </body>
 </html>
