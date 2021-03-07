@@ -49,8 +49,8 @@
 		margin-left: -22px;
 		margin-right: -22px;
 		margin-bottom: 20px;
-		margin-top: -10px;
-		
+		margin-top: -10px;	
+		opacity:100%;	
 	}
 	.home .text-container{
 		text-align: left;
@@ -62,8 +62,6 @@
 		margin-top: 0px;
 		font-size: 25px;
 		font-style: italic;
-
-				
 	}
 	#forms{
 		background: linen;
@@ -72,7 +70,17 @@
 		text-align: center;
 		color: blue;
 		font-family: Times New Roman, serif;
+		animation: myframe 0.50s infinite alternate;
 	}
+	@keyframes myframe {
+		from{
+			margin-left: 1000px;
+		}
+		to{
+			margin-right: 1000px;
+		} 
+	}
+
 </style>
 	<title>World of programming</title>
 </head>
