@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-	-webkit-animation: hello 5s infinite alternate;
+	-webkit-animation: hello 20s infinite alternate;
 	margin: 45px;
 }
 
